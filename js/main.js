@@ -4,10 +4,7 @@ let li = document.querySelectorAll("div nav ul li")
 
 for(let listItem of li)
 {
-    listItem.addEventListener('click', function()
-    {
-        console.info("hi")
-    })
+    listItem.addEventListener('mouseenter', () => console.info("hi"))
 }
 
 // for(let i = 1; i < li.length; i++)
