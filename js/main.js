@@ -1,11 +1,19 @@
-let li = document.querySelectorAll("div nav ul li")
-// console.log(li)
+let list = document.querySelectorAll('p .colPicker');
 
-
-for(let listItem of li)
-{
-    listItem.addEventListener('mouseenter', () => console.info("hi"))
-}
+list.forEach(li => {
+    li.addEventListener('click', ev => {
+        let colClass = li.classList[0]
+        if(colClass == "reset"){
+            console.debug("reset")
+            document.body.classList.remove(...document.body.classList);
+        }
+        else{
+            console.debug("add col")
+            document.body.className = ''; // Clear existing background class (optional)
+            document.body.classList.add(colClass);
+        }
+    })
+})
 
 // for(let i = 1; i < li.length; i++)
 // {
