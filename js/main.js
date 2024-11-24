@@ -84,6 +84,25 @@ imgItem.addEventListener('mouseout', () => {
 
 
 
-//TASK 12
+//TASK 12 - URL NAME ONLY
 
-console.dir(window.location)
+let url = window.location.href;
+let urlName = url.split('/').pop();
+
+//TASK 13
+
+let allLinks = document.querySelectorAll('nav ul li a');
+function getURLNameOnly(url){
+    return url.split('/').pop()
+}
+
+allLinks.forEach(link => {
+    console.debug("this how a link looks like "+getURLNameOnly(link.href))
+    if(getURLNameOnly(link.href) == urlName){
+        console.info(getURLNameOnly(link.href)+" is the current page")
+    }
+});
+
+
+//TASK 14 
+
