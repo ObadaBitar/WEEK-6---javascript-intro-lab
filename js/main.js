@@ -56,31 +56,31 @@ let imgItem = document.querySelector("#myImages");
 
 let mouseOut = false
 
-imgItem.addEventListener('mouseover',() =>{
-    clearInterval(intrevalId);
-    mouseOut = true;
-    imgItem.addEventListener('click', () => {
-        console.info("clicked")
-        if (i + 1 < imgArrSrc.length) {
-            i+=1;
-        }
-        else{
-            i = 0; 
-        };
-        imgSrc.setAttribute('src', imgArrSrc[i])
-    })
-} )
+// imgItem.addEventListener('mouseover',() =>{
+//     clearInterval(intrevalId);
+//     mouseOut = true;
+//     imgItem.addEventListener('click', () => {
+//         console.info("clicked")
+//         if (i + 1 < imgArrSrc.length) {
+//             i+=1;
+//         }
+//         else{
+//             i = 0; 
+//         };
+//         imgSrc.setAttribute('src', imgArrSrc[i])
+//     })
+// } )
     
-imgItem.addEventListener('mouseout', () => {
-    if (i + 1 < imgArrSrc.length) {
-        i += 1; 
-    } else {
-        i = 0;
-        console.info("Resetting image source index");
-    }
-    imgSrc.setAttribute('src', imgArrSrc[i])
-    autoImageRotator(); console.info("mouse leave")
-} );
+// imgItem.addEventListener('mouseout', () => {
+//     if (i + 1 < imgArrSrc.length) {
+//         i += 1; 
+//     } else {
+//         i = 0;
+//         console.info("Resetting image source index");
+//     }
+//     imgSrc.setAttribute('src', imgArrSrc[i])
+//     autoImageRotator(); console.info("mouse leave")
+// } );
 
 
 

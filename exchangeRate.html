@@ -10,6 +10,7 @@
       media="only screen and (min-width:720px)"
       href="css/desktop.css"
     />
+    <script src="js/exchange.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -28,7 +29,7 @@
           <h2>Convert Pounds to Euros</h2>
           <section>
             <div>
-              <form id="myForm">
+              <form id="formGbpToEuro">
                 <p>
                   <label for="pounds">Enter Pounds:</label>
                   <input type="text" id="pounds" />
@@ -39,8 +40,29 @@
               </form>
             </div>
             <div>
-              <p id="msg"></p>
+              <p class="msgGbpToEuro"></p>
             </div>
+          </section>
+
+          <h2>Convert Euros to Pounds</h2>
+          <section>
+            <div>
+              <form id="formEuroToGbp">
+                <p>
+                  <label for="euros">Enter Euros:</label>
+                  <input type="text" id="euros" />
+                </p>
+                <p class="submitBtn">
+                  <input type="submit" value="Convert to Pounds" />
+                </p>
+              </form>
+            </div>
+            <div>
+              <div>
+                <p class="msgEuroToGbp"></p>
+              </div>
+            </div>
+
           </section>
         </div>
       </div>

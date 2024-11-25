@@ -118,3 +118,44 @@ footer {
   text-align: center;
   font-style: italic;
 }
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  min-width: 300px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slides img {
+  max-width: 100%;
+  height: auto;
+}
+
+.dotNav {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dotNav .dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dotNav span.active {
+  background-color: #ffdb66;
+}
